@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Domain", "SqlEsSy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Application", "SqlEsSync.Application\SqlEsSync.Application.csproj", "{1F01AD19-5AD9-431F-BBC9-1BCCA4C65D97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Infrastracture", "SqlEsSync.Infrastracture\SqlEsSync.Infrastracture.csproj", "{B782224C-F826-4C27-8687-C0DED1A923E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Infrastructure", "SqlEsSync.Infrastracture\SqlEsSync.Infrastructure.csproj", "{B782224C-F826-4C27-8687-C0DED1A923E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74B5E33F-B1D9-4C79-923D-7419DB7FD8D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
