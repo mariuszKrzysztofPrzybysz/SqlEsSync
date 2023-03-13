@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SqlEsSync.Domain.Sql;
 
@@ -11,9 +12,11 @@ using SqlEsSync.Domain.Sql;
 namespace SqlEsSync.Domain.Sql.Migrations
 {
     [DbContext(typeof(SqlEsSyncContext))]
-    partial class SqlEsSyncContextModelSnapshot : ModelSnapshot
+    [Migration("20230313191854_AddNewColumnsOnDistributorTable")]
+    partial class AddNewColumnsOnDistributorTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
