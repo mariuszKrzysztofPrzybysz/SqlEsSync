@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Api", "SqlEsSync.Api\SqlEsSync.Api.csproj", "{E425E699-7A98-44D4-AFB3-74EF5C051A98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlEsSync.Api", "SqlEsSync.Api\SqlEsSync.Api.csproj", "{E425E699-7A98-44D4-AFB3-74EF5C051A98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Domain", "SqlEsSync.Domain\SqlEsSync.Domain.csproj", "{8B560751-6C32-4B4D-BBEC-939DCD8FF1F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlEsSync.Domain", "SqlEsSync.Domain\SqlEsSync.Domain.csproj", "{8B560751-6C32-4B4D-BBEC-939DCD8FF1F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Application", "SqlEsSync.Application\SqlEsSync.Application.csproj", "{1F01AD19-5AD9-431F-BBC9-1BCCA4C65D97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlEsSync.Application", "SqlEsSync.Application\SqlEsSync.Application.csproj", "{1F01AD19-5AD9-431F-BBC9-1BCCA4C65D97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Infrastructure", "SqlEsSync.Infrastracture\SqlEsSync.Infrastructure.csproj", "{B782224C-F826-4C27-8687-C0DED1A923E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlEsSync.Infrastructure", "SqlEsSync.Infrastracture\SqlEsSync.Infrastructure.csproj", "{B782224C-F826-4C27-8687-C0DED1A923E2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74B5E33F-B1D9-4C79-923D-7419DB7FD8D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEsSync.Seed", "SqlEsSync.Seed\SqlEsSync.Seed.csproj", "{9FD3DB79-2999-4579-8BBA-3EB87F09CFFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{B782224C-F826-4C27-8687-C0DED1A923E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B782224C-F826-4C27-8687-C0DED1A923E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B782224C-F826-4C27-8687-C0DED1A923E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD3DB79-2999-4579-8BBA-3EB87F09CFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD3DB79-2999-4579-8BBA-3EB87F09CFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD3DB79-2999-4579-8BBA-3EB87F09CFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD3DB79-2999-4579-8BBA-3EB87F09CFFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

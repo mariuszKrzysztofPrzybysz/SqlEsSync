@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SqlEsSync.Api.Models;
+using SqlEsSync.Application.Messages.Commands;
 using SqlEsSync.Application.Messages.Queries;
 
 namespace SqlEsSync.Api.Controllers
@@ -39,6 +40,16 @@ namespace SqlEsSync.Api.Controllers
             };
 
             return Ok(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateAsync([FromBody] CreateDistributor body, CancellationToken cancellationToken)
+        {
+            var command = new CreateDistributorCommand(body.Name, body.AddressLine1, body.AddressLine2, body.Regon, body.Phone, body.Email);
+
+            var distributorId = await _mediator.Send(command, cancellationToken);
+
+            return Created(string.Empty, distributorId);
         }
     }
 }
