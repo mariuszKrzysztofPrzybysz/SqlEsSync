@@ -24,6 +24,29 @@ public sealed class DistributorConfiguration : IEntityTypeConfiguration<Distribu
             .IsRequired();
 
         builder
+            .Property(e => e.AddressLine1)
+            .HasMaxLength(250)
+            .IsRequired();
+
+        builder
+            .Property(e => e.AddressLine2)
+            .HasMaxLength(250);
+
+        builder
+            .Property(e => e.Regon)
+            .IsRequired();
+
+        builder
+            .Property(e => e.Phone)
+            .HasMaxLength(50)
+            .IsRequired();
+
+        builder
+            .Property(e => e.Email)
+            .HasMaxLength(250)
+            .IsRequired();
+
+        builder
             .Ignore(e => e.VersionPeriodEnd);
 
         builder
