@@ -1,8 +1,8 @@
 ﻿using MediatR;
-using SqlEsSync.Domain.Sql.Entities;
+using SqlEsSync.Infrastructure.Models;
 
 namespace SqlEsSync.Application.Messages.Queries;
 
-public record GetDistributorById(long Id) : IRequest<Distributor?>
+public record GetDistributorById(long Id) : IRequest<DistributorDetails?>
 {
 }

@@ -30,7 +30,12 @@ namespace SqlEsSync.Api.Controllers
 
             var model = new DistributorDetails
             {
-                Id = distributor.Id
+                Address = string.Join(" ", distributor.AddressLine1, distributor.AddressLine2),
+                Email = distributor.Email,
+                Id = distributor.Id,
+                Name = distributor.Name,
+                Phone = distributor.Phone,
+                Regon = distributor.Regon
             };
 
             return Ok(model);

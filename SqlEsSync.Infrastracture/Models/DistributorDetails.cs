@@ -1,4 +1,4 @@
-﻿namespace SqlEsSync.Api.Models
+﻿namespace SqlEsSync.Infrastructure.Models
 {
     public class DistributorDetails
     {
@@ -6,7 +6,9 @@
 
         public string Name { get; set; } = default!;
 
-        public string Address { get; set; } = default!;
+        public string AddressLine1 { get; set; } = default!;
+
+        public string? AddressLine2 { get; set; }
 
         public long Regon { get; set; }
 
