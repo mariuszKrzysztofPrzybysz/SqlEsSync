@@ -15,10 +15,13 @@ public sealed class SqlEsSyncContext : DbContext
 
     public DbSet<Producer> Producers { get; set; }
 
+    public DbSet<SyncStatus> SyncStatuses { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new DistributorConfiguration());
         modelBuilder.ApplyConfiguration(new ProducerConfiguration());
+        modelBuilder.ApplyConfiguration(new SyncStatusConfiguration());
 
         base.OnModelCreating(modelBuilder);
     }
