@@ -17,13 +17,13 @@ namespace SqlEsSync.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<Distributor> CreateAsync(Distributor distributor, CancellationToken cancellationToken = default)
+        public async Task<long> CreateAsync(Distributor distributor, CancellationToken cancellationToken = default)
         {
             var entity = await _context.Distributors.AddAsync(distributor, cancellationToken);
 
             await _context.SaveChangesAsync(cancellationToken);
 
-            return entity.Entity;
+            return distributor.Id;
         }
 
         public async Task<Distributor?> TryGetByIdAsync(long id, CancellationToken cancellationToken = default)

@@ -26,9 +26,9 @@ namespace SqlEsSync.Application.Handlers.Commands
                 Regon = request.Regon
             };
 
-            distributor = await _repository.CreateAsync(distributor, cancellationToken);
+            var distributorId = await _repository.CreateAsync(distributor, cancellationToken);
 
-            return distributor.Id;
+            return distributorId;
         }
     }
 }
